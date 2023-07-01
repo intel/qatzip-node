@@ -1,0 +1,45 @@
+{
+  "bugs": {
+    "url": "https://github.com/nodejs/node-addon-api/issues"
+  },
+  "name": "qzip",
+  "description": "qzip-npm package",
+  "version": "1.0.0",
+  "keywords": [
+    "addon",
+    "node-addon-api",
+    "QAT",
+    "qatzip",
+    "qzip",
+    "zlib",
+    "c++"
+  ],
+  "main": "lib/qzip.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "homepage": "https://github.com/intel/qzip-npm.git",
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/intel/qzip-npm.git"
+  },
+  "files": [
+    "package.json",
+    "src/",
+    "test/",
+    "Release/qzip.node",
+    "lib/"
+  ],
+  "scripts": {
+    "build": "node-gyp clean configure build && cp build/Release/qzip.node Release/qzip.node",
+    "debug": "node-gyp clean configure build --debug && cp build/Release/qzip.node Release/qzip.node",
+    "test": "node test/test.js"
+  },
+  "author": "Chenyu Yang <chenyu.yang@intel.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^6.0.0"
+  }
+}
