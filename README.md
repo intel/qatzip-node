@@ -1,3 +1,9 @@
+# DISCONTINUATION OF PROJECT #  
+This project will no longer be maintained by Intel.  
+Intel has ceased development and contributions including, but not limited to, maintenance, bug fixes, new releases, or updates, to this project.  
+Intel no longer accepts patches to this project.  
+ If you have an ongoing need to use this project, are interested in independently developing it, or would like to maintain patches for the open source software community, please create your own fork of this project.  
+  
 The qatzip NPM Package introduction
 ================
 The qatzip is a lightweight npm package built on the QATzip C Library and Intel® QAT (Quick Assistant Technology) technology. The package aims to deliver a high performance Node.js module that performs deflate algorithms based compression and decompression operations on platforms that supports QAT. For platforms without QAT support, it provides fallbacks to zlib Node.js module.
